@@ -12,6 +12,11 @@ h1 {
 	padding-left: 180px;
 }
 
+nav {
+	position: fixed;
+	left: 950px;
+}
+
 #home {
 	margin-top: 0px;
 }
@@ -23,7 +28,6 @@ h1 span {
 #logo {
 	margin-right: 5px;
 }
-
 
 h1, h2 {
 	text-shadow: 2px 2px 2px #fff;
@@ -37,12 +41,7 @@ h1 span, h2 span {
 
 h2 {
 	font-size: 70px;
-	margin-top: 50px;
-}
-
-#intro {
-	float: left;
-	width: 650px;
+	margin-top: 76px;
 }
 
 #code {
@@ -57,8 +56,6 @@ a {
 }
 
 article {
-	clear: both;
-	float: left;
 	margin-top: 400px;
 	min-height: 900px;
 	background: #efefef url(images/background.jpg) repeat-x;
@@ -75,6 +72,7 @@ article {
 	background-color: #FFFFFF;
 	border: 1px solid #6E6E6E;
 	padding: 0px 15px;
+	width: 650px;
 }
 
 /**
@@ -88,7 +86,6 @@ article {
 	list-style-type: none;
 	padding: 0px;
 	width: 250px;
-	float: right;
 	margin-top: 0px;
 }
 
@@ -108,4 +105,10 @@ article {
 	color: #fff;
 	text-decoration: none;
 	font-size: 20px;
+}
+
+.top {
+	margin-top: 10px;
+	font-weight: bolder;
+	display: block;
 }
