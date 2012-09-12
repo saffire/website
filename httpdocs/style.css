@@ -5,6 +5,36 @@ body {
 	font-size: 15pt;
 }
 
+nav {
+	position: fixed;
+	left: 950px;
+}
+
+#actions {
+	list-style-type: none;
+	padding: 0px;
+	width: 250px;
+	margin-top: 0px;
+}
+
+#actions li {
+	margin-bottom: 10px;
+}
+
+#actions a {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 250px;
+	display: block;
+	margin-top: 1px;
+	background-color: #408AD4;
+	border-radius: 15px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
 h1 {
 	font-size: 90px;
 	margin-top: 50px;
@@ -12,21 +42,8 @@ h1 {
 	padding-left: 180px;
 }
 
-nav {
-	position: fixed;
-	left: 950px;
-}
-
-#home {
-	margin-top: 0px;
-}
-
 h1 span {
 	color: #408AD4;
-}
-
-#logo {
-	margin-right: 5px;
 }
 
 h1, h2 {
@@ -42,6 +59,14 @@ h1 span, h2 span {
 h2 {
 	font-size: 70px;
 	margin-top: 76px;
+}
+
+#home {
+	margin-top: 0px;
+}
+
+#logo {
+	margin-right: 5px;
 }
 
 #code {
@@ -82,30 +107,6 @@ article {
 	text-decoration: blink;
 }
 
-#actions {
-	list-style-type: none;
-	padding: 0px;
-	width: 250px;
-	margin-top: 0px;
-}
-
-#actions li {
-	margin-bottom: 10px;
-}
-
-#actions a {
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	width: 250px;
-	display: block;
-	margin-top: 1px;
-	background-color: #408AD4;
-	border-radius: 15px;
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-}
 
 .top {
 	margin-top: 10px;
