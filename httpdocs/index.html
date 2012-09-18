@@ -88,39 +88,40 @@
 
 			<p><em>Example 1:</em> The mandatory hello world example:</p>
 
-			<pre class="code">
-use io;
-io.print("Hello world");</pre>
+<pre class="source saffire"><span class="keyword">use</span> <span class="identifier">io</span><span class="operator">;</span>
+<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span><span class="operator">(</span><span class="string">&quot;Hello world&quot;</span><span class="operator">)</span><span class="operator">;</span>
+</pre>
 
 			<p><em>Example 2:</em> Using variables:</p>
-			<pre class="code">
-use io;
 
-$a = 1;
-$a += 1;
+<pre class="source saffire"><span class="keyword">use</span> <span class="identifier">io</span><span class="operator">;</span>
 
-io.print("The value of $a: ", $a , "\n");</pre>
+<span class="identifier">$a</span> <span class="operator">=</span> <span class="number">1</span><span class="operator">;</span>
+<span class="identifier">$a</span> <span class="operator">+=</span> <span class="number">1</span><span class="operator">;</span>
+
+<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span><span class="operator">(</span><span class="string">&quot;The value of $a: &quot;</span><span class="operator">,</span> <span class="identifier">$a</span> <span class="operator">,</span> <span class="string">&quot;\n&quot;</span><span class="operator">)</span><span class="operator">;</span>
+</pre>
 
 			<p><em>Example 3:</em> A simple class in Saffire:</p>
-			<pre class="code">
-use io;
+<pre class="source saffire"><span class="keyword">use</span> <span class="identifier">io</span><span class="operator">;</span>
 
-class Foo {
-	const FOOBAR = "foobar";
+<span class="keyword">class</span> <span class="identifier">Foo</span> <span class="operator">{</span>
+	<span class="keyword">const</span> <span class="identifier">FOOBAR</span> <span class="operator">=</span> <span class="string">&quot;foobar&quot;</span><span class="operator">;</span>
 
-	protected property $a = 1;
+	<span class="keyword">protected</span> <span class="keyword">property</span> <span class="identifier">$a</span> <span class="operator">=</span> <span class="number">1</span><span class="operator">;</span>
 
-	public method ctor() {
-		// Constructor
-	}
+	<span class="keyword">public</span> <span class="keyword">method</span> <span class="identifier">ctor</span><span class="operator">(</span><span class="operator">)</span> <span class="operator">{</span>
+		<span class="comment">// Constructor</span>
+	<span class="operator">}</span>
 
-	public method foo() {
-		return $a;
-	}
-}
+	<span class="keyword">public</span> <span class="keyword">method</span> <span class="identifier">foo</span><span class="operator">(</span><span class="operator">)</span> <span class="operator">{</span>
+		<span class="keyword">return</span> <span class="identifier">$a</span><span class="operator">;</span>
+	<span class="operator">}</span>
+<span class="operator">}</span>
 
-$f = Foo();
-io.print ("The value is: ", $f.foo());</pre>
+<span class="identifier">$f</span> <span class="operator">=</span> <span class="identifier">Foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
+<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span> <span class="operator">(</span><span class="string">&quot;The value is: &quot;</span><span class="operator">,</span> <span class="identifier">$f</span><span class="operator">.</span><span class="identifier">foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">)</span><span class="operator">;</span>
+</pre>
 		</div>
 	</section>
 

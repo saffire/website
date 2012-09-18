@@ -48,6 +48,19 @@ nav a, footer a {
 }
 
 /**
+ * The fork-me banner on the right.
+ */
+#fork-me {
+	background: transparent url('images/fork-me.png') no-repeat;
+	position: fixed;
+	right: 0px;
+	height: 149px;
+	width: 149px;
+	z-index: 2;
+}
+
+
+/**
  * Reusable styles for each section.
  */
 section {
@@ -72,7 +85,6 @@ a {
 }
 
 .code {
-	font-family: "Lucida Console", "Monaco", monospace;
 	color: #387abb;
 }
 
@@ -137,11 +149,38 @@ footer {
 	background: #2f353b url('images/footer-bg.png') repeat-x;
 }
 
-#fork-me {
-	background: transparent url('images/fork-me.png') no-repeat;
-	position: fixed;
-	right: 0px;
-	height: 149px;
-	width: 149px;
-	z-index: 2;
+/**
+ * The following is for syntax highlighting.
+ */
+.source.saffire {
+	font-family: "Lucida Console", "Monaco", monospace;
+	color: #000;
+}
+
+.source.saffire .comment {
+	color: #666;
+}
+
+.source.saffire .keyword {
+	color: #387ABB;
+}
+
+.source.saffire .identifier {
+	color: #38BC38;
+}
+
+.source.saffire .string {
+	color: #BC3838;
+}
+
+.source.saffire .number {
+	color: #BC38BC;
+}
+
+.source.saffire .operator {
+	color: #3838BC;
+}
+
+.source.saffire .regex {
+	color: #BC38BC;
 }

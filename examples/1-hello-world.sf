@@ -1,0 +1,2 @@
+use io;
+io.print("Hello world");
