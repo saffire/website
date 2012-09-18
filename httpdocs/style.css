@@ -125,7 +125,6 @@ a {
 	margin: -20px 0px 0px 0px;
 }
 
-
 #logo {
 	position: absolute;
 	right: 0px;
@@ -166,7 +165,7 @@ footer {
 }
 
 .source.saffire .identifier {
-	color: #38BC38;
+	color: #070;
 }
 
 .source.saffire .string {
