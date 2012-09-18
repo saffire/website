@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Saffire Language</title>
 	<meta charset="UTF-8">
+	<title>Saffire Language</title>
 	<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="scripts/smooth.pack.js"></script>
 </head>
 
 <body>
-	<!-- Home -->
-	<article id="home">
+	<nav>
+		<ol>
+			<li><a href="#home">home</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#tutorial">tutorial</a></li>
+			<li><a href="http://spec.saffire-lang.org">language specification</a></li>
+			<li><a href="https://groups.google.com/forum/?fromgroups#!forum/saffire-internals">mailing list</a></li>
+			<li><a href="https://github.com/saffire/saffire">fork us on github</a></li>
+		</ol>
+	</nav>
+
+	<a name="home"></a>
+	<section id="home">
 		<div class="content">
 			<header>
-				<h1><span>Saffire</span> language</h1>
+				<h1>Saffire</h1>
+				<h2>A new language.</h2>
 			</header>
 
-			<nav>
-				<ol id="actions">
-					<!-- <li><a href="">Download!</a></li> -->
-					<li><a href="#about">About Saffire</a></li>
-					<li><a href="#tutorial">Tutorial</a></li>
-					<li><a href="http://spec.saffire-lang.org/">Language spec</a></li>
-					<li><a href="https://groups.google.com/forum/?fromgroups#!forum/saffire-internals">Mailing list</a></li>
-					<li><a href="https://github.com/saffire/saffire">Saffire on Github</a></li>
-				</ol>
-			</nav>
+			<p class="hello-world">
+			use io;<br />
+			io.print(<em>"Hello world"</em>);
+			</p>
 
-			<div id="intro" class="block">
-				<p>Saffire is a new, in-progress programming scripting language, based 
-				primarily on Python, PHP, and Ruby. So why would you want to use Saffire?</p>
+			<img src="images/logo.png" id="logo" alt="Saffire logo" />
+		</div>
+	</section> <!-- #home -->
 
-				<ul>
-					<li>Everything is an object.</li>
-					<li>Unicode support out of the box.</li>
-					<li>Operator and method overloading.</li>
-					<li>No global functions.</li>
-					<li class="blink">It is awesome.</li>
-				</ul>
-
-				<p><strong>Want to join development?</strong> Go to the 
-				<a href="http://webchat.freenode.net?channels=saffire&amp;uio=d4">#saffire channel</a>
-				on freenode, sign in to 
-				<a href="https://groups.google.com/forum/?fromgroups#!forum/saffire-internals">our mailinglist</a>,
-				read the <a href="http://spec.saffire-lang.org/">language specification</a> so far,
-				and <a href="https://github.com/saffire/saffire">fork Saffire on github</a>.
-				</p>
-
-				<p>If you want to know more about this fun project, click <a href="#about">about</a>.</p>
-			</div> <!-- #intro -->
-		</div> <!-- .content -->
-	</article> <!-- #home -->
-
-	<article id="about">
+	<a name="about"></a>
+	<section id="about">
 		<div class="content">
-			<h2><span>Saffire</span> about</h2>
-			<div class="block">
-				<p>Joshua Thijssen, looking for some fun, decided he wanted to learn more about Flex/Bison.
-				Very quickly he decided to create a parser that could actually parse PHP files, but when 
-				reading up on the Zend Language Parser, he thought; "Wouldn't it be fun to have a language
-				that takes all the good things from Python, Ruby, and PHP, and mix them together?" Some other
-				people certainly thought so, and presto: <em>Saffire</em> was born.</p>
+			<h2>About Saffire</h2>
 
-				<p>The name Saffire is a hybrid between the English word Sapphire, and its Dutch counterpart Saffier.</p>
-			</div> <!-- .block -->
+			<p>Saffire is a new, in-progress programming scripting language, based 
+			primarily on Python, PHP, and Ruby. So why would you want to use Saffire?</p>
 
-			<a href="#home" class="top">Back to top</a>
-		</div> <!-- .content -->
-	</article> <!-- #about -->
+			<ul>
+				<li>Everything is an object.</li>
+				<li>Unicode support out of the box.</li>
+				<li>Operator and method overloading.</li>
+				<li>No global functions.</li>
+				<li>It is <em class="blink">awesome.</em></li>
+			</ul>
 
-	<article id="tutorial">
+			<p><strong>Want to join development?</strong> Go to the 
+			<a href="http://webchat.freenode.net?channels=saffire&amp;uio=d4">#saffire channel</a>
+			on freenode, sign in to 
+			<a href="https://groups.google.com/forum/?fromgroups#!forum/saffire-internals">our mailinglist</a>,
+			read the <a href="http://spec.saffire-lang.org/">language specification</a> so far,
+			and <a href="https://github.com/saffire/saffire">fork saffire on github</a>.
+			</p>
+
+			<h2>History</h2>
+			
+			<p>Joshua Thijssen, looking for some fun, decided he wanted to learn more about Flex/Bison. 
+			Very quickly he decided to create a parser that could actually parse PHP files, but when reading 
+			up on the Zend Language Parser, he thought; "Wouldn't it be fun to have a language that takes all 
+			the good things from Python, Ruby, and PHP, and mix them together?" Some other people certainly 
+			thought so, and presto: Saffire was born.</p>
+
+			<p>The name Saffire is a hybrid between the English word <em>Sapphire</em>, and its Dutch 
+			counterpart <em>Saffier</em>.</p>
+			
+		</div>
+	</section> <!-- #about -->
+
+	<a name="tutorial"></a>
+	<section id="tutorial">
 		<div class="content">
-			<h2><span>Saffire</span> tutorial</h2>
-			<div class="block">
-				<p>Now, wait a minute. Just because we have a fancy website, 
-				doesn't mean we're done, <em>not by a long shot</em>. You might 
-				want to read up on the <a href="http://spec.saffire-lang.org/">language
-				specification</a>, but don't expect to have a working Saffire binary any time
-				soon.</p>
+			<h2>Tutorial</h2>
+			<p>Now, wait a minute. Just because we have a fancy website, doesn't mean we're done, 
+			not by a long shot. You might want to read up on the language specification, but don't 
+			expect to have a working Saffire binary any time soon.</p>
 
-                <p>But until then, some code snippets to give you an idea on how Saffire
-                will look like:</p>
+			<p>That being said, we do have a few snippets of what Saffire code will look like.</p>
 
-                <p><em>Example 1:</em> The mandatory hello world example:</p>
-                <pre class="code">
+			<p><em>Example 1:</em> The mandatory hello world example:</p>
+
+			<pre class="code">
 use io;
 io.print("Hello world");</pre>
 
-                <p><em>Example 2:</em> Using variables:</p>
-                <pre class="code">
+			<p><em>Example 2:</em> Using variables:</p>
+			<pre class="code">
 use io;
 
 $a = 1;
@@ -95,32 +100,27 @@ $a += 1;
 
 io.print("The value of $a: ", $a , "\n");</pre>
 
-                <p><em>Example 3:</em> A simple class saffire class:</p>
-                <pre class="code">
+			<p><em>Example 3:</em> A simple class in Saffire:</p>
+			<pre class="code">
 use io;
 
 class Foo {
-    const FOOBAR = "foobar";
-    protected property $a = 1;
+	const FOOBAR = "foobar";
 
-    public method ctor() {
-        // Constructor
-    }
+	protected property $a = 1;
 
-    public method foo() {
-        return $a;
-    }
+	public method ctor() {
+		// Constructor
+	}
+
+	public method foo() {
+		return $a;
+	}
 }
 
 $f = Foo();
 io.print ("The value is: ", $f.foo());</pre>
-
-            </div> <!-- .block -->
-
-
-			<a href="#home" class="top">Back to top</a>
-		</div> <!-- .content -->
-	</article> <!-- #tutorial -->
-
+		</div>
+	</section>
 </body>
 </html>
