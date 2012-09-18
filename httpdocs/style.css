@@ -1,115 +1,130 @@
 body {
 	font-family: 'Droid sans', sans-serif;
 	margin: 0px;
-	background-color: #efefef;
 	font-size: 15pt;
-}
-
-nav {
-	position: fixed;
-	left: 950px;
-}
-
-#actions {
-	list-style-type: none;
-	padding: 0px;
-	width: 250px;
-	margin-top: 0px;
-}
-
-#actions li {
-	margin-bottom: 10px;
-}
-
-#actions a {
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	width: 250px;
-	display: block;
-	margin-top: 1px;
-	background-color: #408AD4;
-	border-radius: 15px;
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-h1 {
-	font-size: 90px;
-	margin-top: 50px;
-	background: url(images/saffire-logo-small-glow.png) no-repeat 70px 25px;
-	padding-left: 180px;
-}
-
-h1 span {
-	color: #408AD4;
-}
-
-h1, h2 {
-	text-shadow: 2px 2px 2px #fff;
-	font-weight: bold;
-	color: #6E6E6E;
-}
-
-h1 span, h2 span {
-	color: #408AD4;
-}
-
-h2 {
-	font-size: 70px;
-	margin-top: 76px;
-}
-
-#home {
-	margin-top: 0px;
-}
-
-#logo {
-	margin-right: 5px;
-}
-
-.code {
-	font-family: "Lucida Console", "Monaco", monospace;
-	font-size: 10pt;
-    background-color: #dddddd;
-	padding: 5px;
-}
-
-a {
-	color: #D44040;
-}
-
-article {
-	margin-top: 400px;
-	min-height: 900px;
-	background: #efefef url(images/background.jpg) repeat-x;
-	width: 100%;
-}
-
-.content {
-	width: 980px;
-	margin: 0px auto;
-	overflow: hidden;
-}
-
-.block {
-	background-color: #FFFFFF;
-	border: 1px solid #6E6E6E;
-	padding: 0px 15px;
-	width: 650px;
+	margin: 0px;
+	color: #2f353b;
 }
 
 /**
- * Yes. Blink. Only here to please Joshua, really.
+ * Also in the new design, we have to add .blink to keep Joshua happy :)
  */
 .blink {
 	text-decoration: blink;
 }
 
+/**
+ * The navigation menu.
+ */
+nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: transparent url('images/nav-bg.png') repeat-x;
+	height: 62px;
+	z-index: 1;
+}
 
-.top {
-	margin-top: 10px;
+nav ol {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	width: 1024px;
+	margin: 0px auto;
+}
+
+nav li {
+	float: left;
+	height: 49px;
+	line-height: 49px;
+	padding-left: 60px;
+}
+
+nav a {
+	color: #c7def6;
+	text-decoration: none;
+}
+
+/**
+ * Reusable styles for each section.
+ */
+section {
+	background: transparent url('images/section-gradient.png') repeat-x;
+	min-height: 500px;
+	padding-top: 10px;
+}
+
+.content {
+	width: 900px;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+a {
+	color: #387abb;
+}
+
+.code {
+	font-family: "Lucida Console", "Monaco", monospace;
+	color: #387abb;
+}
+
+/**
+ * Style for the "home" section.
+ */
+#home {
+	background: transparent url('images/home-gradient.png') repeat-x;
+	margin-top: 49px;
+	height: 530px;
+}
+
+#home .content {
+	overflow: visible;
+}
+
+#home header {
+	width: 450px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding-top: 115px;
+}
+
+#home h1, #home h2 {
+	text-transform: lowercase;
+}
+
+#home h1 {
+	margin: 0px;
+	font-size: 140px;
+	float: right;
+}
+
+#home h2 {
+	font-size: 36px;
+	color: #387abb;
+	float: right;
+	margin: -20px 0px 0px 0px;
+}
+
+
+#logo {
+	position: absolute;
+	right: 0px;
+}
+
+p.hello-world {
 	font-weight: bolder;
-	display: block;
+	font-size: 30px;
+	padding-top: 40px;
+}
+
+p.hello-world em {
+	font-style: normal;
+	color: #387abb;
 }
