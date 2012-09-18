@@ -26,7 +26,7 @@ nav {
 	z-index: 1;
 }
 
-nav ol {
+nav ol, footer ol {
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
@@ -34,14 +34,14 @@ nav ol {
 	margin: 0px auto;
 }
 
-nav li {
+nav li, footer li {
 	float: left;
 	height: 49px;
 	line-height: 49px;
 	padding-left: 60px;
 }
 
-nav a {
+nav a, footer a {
 	color: #c7def6;
 	text-decoration: none;
 }
@@ -52,7 +52,7 @@ nav a {
 section {
 	background: transparent url('images/section-gradient.png') repeat-x;
 	min-height: 500px;
-	padding-top: 10px;
+	padding: 2em 0px;
 }
 
 .content {
@@ -127,4 +127,11 @@ p.hello-world {
 p.hello-world em {
 	font-style: normal;
 	color: #387abb;
+}
+
+footer {
+	background-color: #2f353b;
+	width: 100%;
+	height: 100px;
+	background: #2f353b url('images/footer-bg.png') repeat-x;
 }
