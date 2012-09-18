@@ -1,7 +1,7 @@
 body {
 	font-family: 'Droid sans', sans-serif;
 	margin: 0px;
-	font-size: 15pt;
+	font-size: 13pt;
 	margin: 0px;
 	color: #2f353b;
 }
@@ -39,6 +39,7 @@ nav li, footer li {
 	height: 49px;
 	line-height: 49px;
 	padding-left: 65px;
+	font-size: 15pt;
 }
 
 nav a, footer a {
