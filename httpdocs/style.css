@@ -54,11 +54,11 @@ nav a, footer a {
 	background: transparent url('images/fork-me.png') no-repeat;
 	position: fixed;
 	right: 0px;
+	top: 0px;
 	height: 149px;
 	width: 149px;
 	z-index: 2;
 }
-
 
 /**
  * Reusable styles for each section.
@@ -154,6 +154,9 @@ footer {
 .source.saffire {
 	font-family: "Lucida Console", "Monaco", monospace;
 	color: #000;
+	background: #f1f1f1;
+	padding: 10px;
+	border: 1px solid #d1d1d1;
 }
 
 .source.saffire .comment {
