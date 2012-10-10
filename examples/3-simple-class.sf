@@ -10,7 +10,7 @@ class Foo {
 	}
 
 	public method foo() {
-		return $a;
+		return self.$a;
 	}
 }
 
