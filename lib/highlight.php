@@ -1,24 +1,5 @@
 <?php
 /**
- * This is a script that can highlight Saffire-syntax, built by Richard van 
- * Velzen (https://github.com/rvanvelzen). Many thanks.
- */
-$script = array_shift($argv);
-
-if(count($argv) === 0) {
-	printf("Usage: php %s <input>\n", $script);
-	exit;
-}
-
-$input = array_shift( $argv );
-if(!is_file($input) || !is_readable($input)) {
-	printf( "File \"%s\" is not readable. Usage: php %s <input>\n", $input, $script );
-	exit;
-}
-
-echo highlightSaffire(file_get_contents($input));
-
-/**
  * A function that can highlight a string that contains Saffire syntax.
  * 
  * @param string $text
@@ -87,5 +68,5 @@ function highlightSaffire($text) {
         $pointer += strlen($match[0]);
     }
 
-    return '<pre class="source saffire">' . implode($output) . '</pre>';
+    return implode($output);
 }
