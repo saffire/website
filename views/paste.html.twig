@@ -1,0 +1,15 @@
+{% extends "new-paste.html.twig" %}
+
+{% block paste %}
+	<h2>Paste {{paste.paste_id}}</h2>
+	<p>Added by {{paste.name != '' ? paste.name : 'Anonymous'}} on {{paste.added}}</p>
+
+	<h3>Input</h3>
+	<pre class="source saffire">
+{{paste.paste|highlight|raw}}</pre>
+
+	<h3>Output</h3>
+	<pre class="source saffire">
+{{paste.output}}</pre>
+	<a href="{{paste.image}}">View AST</a>
+{% endblock %}
