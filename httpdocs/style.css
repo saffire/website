@@ -151,12 +151,13 @@ footer {
 /**
  * The following is for syntax highlighting.
  */
-.source.saffire {
+.source {
 	font-family: "Lucida Console", "Monaco", monospace;
 	color: #000;
 	background: #f1f1f1;
 	padding: 10px;
 	border: 1px solid #d1d1d1;
+	overflow: auto;
 }
 
 .source.saffire .comment {
@@ -185,4 +186,57 @@ footer {
 
 .source.saffire .regex {
 	color: #BC38BC;
+}
+
+/**
+ * CSS stuff for codepad.
+ */
+#codepad h1 {
+	margin-top: 60px;
+	font-size: 40pt;
+}
+.pastes {
+	width: 630px;
+	float: left;
+}
+
+.recent {
+	width: 250px;
+	float: right;
+}
+
+form ol {
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+form li {
+	clear: both;
+	margin: 10px 0px;
+	float: left;
+}
+
+form label {
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	float: left;
+}
+
+form input, form select {
+	width: 200px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-family: 'Droid sans', sans-serif;
+	font-size: 12pt;
+}
+
+form select, form .submit {
+	width: 205px;
+}
+
+form .submit {
+	margin-left: 200px;
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Saffire Codepad</title>
+	<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+	<link href="/style.css" rel="stylesheet" type="text/css">
+	<link href="/codepad.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="scripts/smooth.pack.js"></script>
+</head>
+
+<body>
+	<nav>
+		<ol>
+			<li><a href="http://saffire-lang.org">home</a></li>
+			<li><a href="#new-paste">new paste</a></li>
+		</ol>
+	</nav>
+
+	<section id="codepad">
+		<div class="content">
+			<h1>saffire codepad</h1>	
+			<div class="pastes">
+				{% block paste %}
+				{% endblock %}
+
+				<h2>Add a new paste</h2>
+				<p><em>Note</em>: we have a working Saffire binary, which is awesome 
+				and all, but it's still far from complete. Although you can do assignments 
+				and stuff, don't expect classes and objects to be working. We'll try to keep
+				the binary used for this codepad up-to-date, so you can always try the most
+				recent features.</p>
+
+				<a name="new-paste"></a>
+				<form action="/codepad" method="POST">
+					<ol>
+						<li>
+							<textarea name="paste" id="paste" rows="10" cols="87">{{paste ? paste.paste : ''}}</textarea>
+						</li>
+						<li>
+							<label for="name">Your name</label>
+							<input type="text" name="name" id="name" value="{{name}}" />
+						</li>
+						<li>
+							<label for="private">Paste visibility</label>
+							<select name="private" id="private">
+								<option value="no">Public</option>
+								<option value="yes">Private</option>
+							</select>
+						</li>
+						<li>
+							<input class="submit" type="submit" value="Add your paste!" id="submit" />
+						</li>
+					</ol>
+				</form>
+			</div>
+
+			<div class="recent">
+				<h2>Recent pastes</h2>
+				{# Show recent pastes. #}
+				{% if recent|length > 0 %}
+				<ol>
+				{% for paste in recent %}
+					<li>
+						Paste <a href="/codepad/{{paste.paste_id}}">{{paste.paste_id}}</a><br />
+						by <em>{{paste.name == '' ? 'Anonymous' : paste.name}}</em><br />
+						at <em>{{paste.added}}</em>
+					</li>
+				{% endfor %}
+				</ol>
+				{% endif %}
+			</div>
+		</div> <!-- .pastes -->
+	</section>
+
+	<footer>
+		<ol>
+			<li><a href="http://saffire-lang.org/#home">home</a></li>
+			<li><a href="http://saffire-lang.org/#about">about</a></li>
+			<li><a href="http://saffire-lang.org/#tutorial">tutorial</a></li>
+			<li><a href="http://spec.saffire-lang.org">language specification</a></li>
+			<li><a href="https://groups.google.com/forum/?fromgroups#!forum/saffire-internals">mailing list</a></li>
+			<li><a href="https://github.com/saffire/saffire">on github</a></li>
+		</ol>
+	</footer>
+
+</body>
+</html>
