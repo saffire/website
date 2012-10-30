@@ -23,14 +23,14 @@ function highlightSaffire($text) {
               | implements | abstract | final | interface | const | static | public
               | private | protected | method | readonly | property | catch | finally
               | throw | return | break | breakelse | continue | try | default | goto
-              | case | self | parent | yield | in
+              | case | self | parent | yield | in | import | alias
             ) \b )
             | (?P<operator> (?: [<>]{2} | [-+*/%&|^\~<>=!] ) = | [|&<>+-]{2} | [][+%<>(){}:;=,.?!*^|-]
                 ' . ($state === $ST_DIV ? ' | / ' : '') . ')
             | (?P<regex> ' . ($state === $ST_DIV ? '(?!)' : '
                 /[^/\\\\]*(?:\\\\.[^/\\\\]*)*/[a-z]*
             ' ) . ')
-            | (?P<identifier> ::\+ | [$a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]* | [a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]* [?!]? )
+            | (?P<identifier> ::\+ | [a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]* | [a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]* [?!]? )
             | (?P<string> "[^"]*" | \'[^\']*\' )
             | (?P<whitespace> \s+ )
             | (?P<number> \d+ )

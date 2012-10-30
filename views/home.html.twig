@@ -30,7 +30,7 @@
 			</header>
 
 			<p class="hello-world">
-			use io;<br />
+			import io;<br />
 			io.print(<em>"Hello world"</em>);
 			</p>
 
@@ -88,39 +88,39 @@
 
 			<p><em>Example 1:</em> The mandatory hello world example:</p>
 
-<pre class="source saffire"><span class="keyword">use</span> <span class="identifier">io</span><span class="operator">;</span>
+<pre class="source saffire"><span class="keyword">import</span> <span class="identifier">io</span><span class="operator">;</span>
 <span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span><span class="operator">(</span><span class="string">&quot;Hello world&quot;</span><span class="operator">)</span><span class="operator">;</span>
 </pre>
 
 			<p><em>Example 2:</em> Using variables:</p>
 
-<pre class="source saffire"><span class="keyword">use</span> <span class="identifier">io</span><span class="operator">;</span>
+<pre class="source saffire"><span class="keyword">import</span> <span class="identifier">io</span><span class="operator">;</span>
 
-<span class="identifier">$a</span> <span class="operator">=</span> <span class="number">1</span><span class="operator">;</span>
-<span class="identifier">$a</span> <span class="operator">+=</span> <span class="number">1</span><span class="operator">;</span>
+<span class="identifier">a</span> <span class="operator">=</span> <span class="number">1</span><span class="operator">;</span>
+<span class="identifier">a</span> <span class="operator">+=</span> <span class="number">1</span><span class="operator">;</span>
 
-<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span><span class="operator">(</span><span class="string">&quot;The value of $a: &quot;</span><span class="operator">,</span> <span class="identifier">$a</span> <span class="operator">,</span> <span class="string">&quot;\n&quot;</span><span class="operator">)</span><span class="operator">;</span>
+<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span><span class="operator">(</span><span class="string">&quot;The value of a: &quot;</span><span class="operator">,</span> <span class="identifier">a</span> <span class="operator">,</span> <span class="string">&quot;\n&quot;</span><span class="operator">)</span><span class="operator">;</span>
 </pre>
 
 			<p><em>Example 3:</em> A simple class in Saffire:</p>
-<pre class="source saffire"><span class="keyword">use</span> <span class="identifier">io</span><span class="operator">;</span>
+<pre class="source saffire"><span class="keyword">import</span> <span class="identifier">io</span><span class="operator">;</span>
 
 <span class="keyword">class</span> <span class="identifier">Foo</span> <span class="operator">{</span>
 	<span class="keyword">const</span> <span class="identifier">FOOBAR</span> <span class="operator">=</span> <span class="string">&quot;foobar&quot;</span><span class="operator">;</span>
 
-	<span class="keyword">protected</span> <span class="keyword">property</span> <span class="identifier">$a</span> <span class="operator">=</span> <span class="number">1</span><span class="operator">;</span>
+	<span class="keyword">protected</span> <span class="keyword">property</span> <span class="identifier">a</span> <span class="operator">=</span> <span class="number">1</span><span class="operator">;</span>
 
 	<span class="keyword">public</span> <span class="keyword">method</span> <span class="identifier">ctor</span><span class="operator">(</span><span class="operator">)</span> <span class="operator">{</span>
 		<span class="comment">// Constructor</span>
 	<span class="operator">}</span>
 
 	<span class="keyword">public</span> <span class="keyword">method</span> <span class="identifier">foo</span><span class="operator">(</span><span class="operator">)</span> <span class="operator">{</span>
-		<span class="keyword">return</span> <span class="keyword">self</span><span class="operator">.</span><span class="identifier">$a</span><span class="operator">;</span>
+		<span class="keyword">return</span> <span class="keyword">self</span><span class="operator">.</span><span class="identifier">a</span><span class="operator">;</span>
 	<span class="operator">}</span>
 <span class="operator">}</span>
 
-<span class="identifier">$f</span> <span class="operator">=</span> <span class="identifier">Foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
-<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span> <span class="operator">(</span><span class="string">&quot;The value is: &quot;</span><span class="operator">,</span> <span class="identifier">$f</span><span class="operator">.</span><span class="identifier">foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">)</span><span class="operator">;</span>
+<span class="identifier">f</span> <span class="operator">=</span> <span class="identifier">Foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
+<span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span> <span class="operator">(</span><span class="string">&quot;The value is: &quot;</span><span class="operator">,</span> <span class="identifier">f</span><span class="operator">.</span><span class="identifier">foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">)</span><span class="operator">;</span>
 </pre>
 		</div>
 	</section>

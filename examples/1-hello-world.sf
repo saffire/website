@@ -1,2 +1,2 @@
-use io;
+import io;
 io.print("Hello world");
