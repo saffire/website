@@ -1,6 +1,6 @@
-use io;
+import io;
 
-$a = 1;
-$a += 1;
+a = 1;
+a += 1;
 
-io.print("The value of $a: ", $a , "\n");
+io.print("The value of a: ", a , "\n");
