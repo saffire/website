@@ -27,7 +27,7 @@
 		<div class="content">
 			<header>
 				<h1>Saffire</h1>
-				<h2>A new language.</h2>
+				{#<h2>The language.</h2>#}
 			</header>
 
 			<p class="hello-world">
@@ -44,14 +44,14 @@
 		<div class="content">
 			<h2>About Saffire</h2>
 
-			<p>Saffire is a new, in-progress programming scripting language, based 
-			primarily on Python, PHP, and Ruby. So why would you want to use Saffire?</p>
+			<p>Saffire is a new, scripting language, based primarily on Python, PHP, and Ruby. Our goal is to blend all
+            the good things of those languages into a new one. Saffire primary selling points:</p>
 
 			<ul>
 				<li>Everything is an object.</li>
 				<li>Unicode support out of the box.</li>
+                <li>CLI & FastCGI interfaces.</li>
 				<li>Operator and method overloading.</li>
-				<li>No global functions.</li>
 				<li>It is <em class="blink">awesome.</em></li>
 			</ul>
 
@@ -63,14 +63,15 @@
 			and <a href="https://github.com/saffire/saffire">fork saffire on github</a>. Post any issues you find
             to our <a href="https://saffire.atlassian.net">issue tracker</a>.
 			</p>
+            <p>We can use all the help! If you don't know any C, that's fine too. There are many things non-C related
+            that could use your help too. For instance, building and updating this site, helping out defining how the
+            language should look like, writing Saffire unittests etc etc.  You won't have to sit still, we promise!</p>
 
 			<h2>History</h2>
 			
-			<p>Joshua Thijssen, looking for some fun, decided he wanted to learn more about Flex/Bison. 
-			Very quickly he decided to create a parser that could actually parse PHP files, but when reading 
-			up on the Zend Language Parser, he thought; "Wouldn't it be fun to have a language that takes all 
-			the good things from Python, Ruby, and PHP, and mix them together?" Some other people certainly 
-			thought so, and presto: Saffire was born.</p>
+			<p>Saffire is originally started by Joshua Thijssen. Spending much time in other languages like PHP and
+            Python, he thought; "Wouldn't it be fun to have a language that takes all the good things from these
+            languages and mix them together?" Some other people certainly thought so, and presto: Saffire was born.</p>
 
 			<p>The name Saffire is a hybrid between the English word <em>Sapphire</em>, and its Dutch 
 			counterpart <em>Saffier</em>.</p>
@@ -82,9 +83,9 @@
 	<section id="tutorial">
 		<div class="content">
 			<h2>Tutorial</h2>
-			<p>Now, wait a minute. Just because we have a fancy website, doesn't mean we're done, 
-			not by a long shot. You might want to read up on the language specification, but don't 
-			expect to have a working Saffire binary any time soon.</p>
+			<p>Now, wait a minute. Just because we have a fancy website, doesn't mean we're done.
+			Not even by a long shot! You might want to read up on the language specification, but don't
+			expect to build your website in Saffire any time soon (although we are getting close!).</p>
 
 			<p>That being said, we do have a few snippets of what Saffire code will look like.</p>
 
@@ -124,7 +125,10 @@
 <span class="identifier">f</span> <span class="operator">=</span> <span class="identifier">Foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
 <span class="identifier">io</span><span class="operator">.</span><span class="identifier">print</span> <span class="operator">(</span><span class="string">&quot;The value is: &quot;</span><span class="operator">,</span> <span class="identifier">f</span><span class="operator">.</span><span class="identifier">foo</span><span class="operator">(</span><span class="operator">)</span><span class="operator">)</span><span class="operator">;</span>
 </pre>
+
+            <p>Stay in touch. A real 15-minute Saffire tutorial will follow soon!</p>
 		</div>
+
 	</section>
 
 	<footer>
@@ -134,6 +138,7 @@
 			<li><a href="#tutorial">tutorial</a></li>
 			<li><a href="http://spec.saffire-lang.org">language specification</a></li>
 			<li><a href="https://groups.google.com/forum/?fromgroups#!forum/saffire-internals">mailing list</a></li>
+            <li><a href="https://saffire.atlassian.net">issue tracker</a></li>
 			<li><a href="https://github.com/saffire/saffire">on github</a></li>
 		</ol>
 	</footer>
